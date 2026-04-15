@@ -447,12 +447,6 @@ div[style*="position:sticky"] {
 }
 
 @media only screen and (max-width:900px) {
-    #berdo-scrolly .berdo-align-left,
-    #berdo-scrolly .berdo-align-right,
-    #berdo-scrolly .berdo-align-center {
-        margin-left: 0;
-        margin-right: 0;
-    }
 
     #berdo-scrolly .berdo-scrolly-step-card {
         width: 100%;
@@ -461,8 +455,9 @@ div[style*="position:sticky"] {
     }
 
     #first-chapter {
-        padding-top: 12vh;
-        align-items: flex-start;
+        margin-top: 12vh;
+        padding-top: 0;
+        display: block;
     }
 }
 
@@ -927,7 +922,8 @@ main.site-main .berdo-scrolly-step-card p {
     }
 
 
-    .berdo-scrolly-step {
+    .berdo-scrolly-step,
+    #first-chapter {
         min-height: 68vh;
         padding: 0 0 10vh;
     }
@@ -1139,6 +1135,7 @@ font-size: 20px;
 cursor: pointer;
 font-weight: bold;
 }
+
 
 
 
