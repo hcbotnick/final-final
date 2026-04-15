@@ -446,6 +446,19 @@ div[style*="position:sticky"] {
 }
 }
 
+@media only screen and (max-width:900px) {
+    #berdo-scrolly .berdo-scrolly-step-card {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        padding: 16px;
+    }
+
+    #first-chapter {
+        padding-top: 12vh;
+        align-items: flex-start;
+    }
+}
+
 @media only screen and (min-width:501px) { /*FOR LARGER SCREENS */
 main.site-main {
     width:50%;
