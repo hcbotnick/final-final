@@ -438,6 +438,35 @@ main.site-main {
     width:50%;
     margin: 0 auto;
 }
+
+.entry-meta p.byline {
+    margin-top: 235px;
+}
+
+#countdown {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    margin-left: 2px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #a61824;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.countdown-subhead {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.3;
+}
 }
 
 main h1 {
@@ -541,36 +570,8 @@ float: left;
     align-items: flex-start;
 }
 
-#countdown {
-    position: sticky;
-    top: 100px;             
-    
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-    
-    width: 120px;
-    margin-left: 2px;
-    
-    font-size: 1em;
-    font-weight: bold;
-    color: #a61824;
-    
-    background: white;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
 .article-content {
     width: 100%;
-}
-.countdown-subhead {
-    font-family: "Libre Baskerville", serif;
-    font-size: 1em;
-    margin-bottom: 15px;
-    text-align: center;
-    line-height: 1.3;
 }
 
 .comparison-container {
