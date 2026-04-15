@@ -1,30 +1,6 @@
 
 const targetDate = new Date("January 1, 2050 00:00:00").getTime();
 
-const heroVideo = document.getElementById("hero-video");
-if (heroVideo) {
-    heroVideo.muted = true;
-    heroVideo.playsInline = true;
-
-    const tryAutoplayHero = function () {
-        const playPromise = heroVideo.play();
-        if (playPromise && typeof playPromise.catch === "function") {
-            playPromise.catch(function () {
-                document.body.classList.add("hero-video-fallback");
-            });
-        }
-    };
-
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", tryAutoplayHero);
-    } else {
-        tryAutoplayHero();
-    }
-
-    document.addEventListener("touchstart", tryAutoplayHero, { once: true, passive: true });
-    document.addEventListener("click", tryAutoplayHero, { once: true });
-}
-
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = targetDate - now;
@@ -322,20 +298,10 @@ e.stopPropagation();
 const btn = document.getElementById("infoButton");
 const modal = document.getElementById("definitionModal");
 const panel = modal.querySelector(".modal-content");
-modal.style.display = "block";
-
-const isMobile = window.matchMedia("(max-width: 768px)").matches;
-if (isMobile) {
-panel.style.top = "50%";
-panel.style.left = "50%";
-panel.style.transform = "translate(-50%, -50%)";
-return;
-}
-
 const rect = btn.getBoundingClientRect();
+modal.style.display = "block";
 panel.style.top = (rect.bottom + 8) + "px";
 panel.style.left = Math.max(8, (rect.left - 100)) + "px";
-panel.style.transform = "none";
 }
 
 function closeModal() {
