@@ -398,6 +398,7 @@ div[style*="position:sticky"] {
     min-height: 76vh;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 40px;
 }
 
 .berdo-scrolly-step-card {
