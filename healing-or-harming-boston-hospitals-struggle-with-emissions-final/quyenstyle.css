@@ -719,6 +719,75 @@ main.site-main .berdo-scrolly-step-card p {
     }
 }
 
+@media (max-width: 900px) {
+    #countdown {
+        position: static !important;
+        left: auto !important;
+        right: auto !important;
+        width: min(100%, 420px);
+        margin: 12px auto 18px;
+        padding: 12px 14px;
+        font-size: 1rem;
+        border-radius: 12px;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .countdown-subhead {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        flex: 1 1 calc(50% - 8px);
+        min-width: 120px;
+        text-align: center;
+    }
+
+    #berdo-scrolly-story {
+        padding: 0 14px 20px;
+    }
+
+    .berdo-scrolly-step {
+        min-height: 70vh;
+        padding-top: 52vh;
+    }
+
+    #first-chapter {
+        min-height: 70vh;
+    }
+
+    .berdo-scrolly-step-card {
+        width: 92%;
+        max-width: none;
+        padding: 16px;
+    }
+
+    .berdo-scrolly-step-card p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .berdo-scrolly-legend {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        padding: 8px 10px;
+    }
+
+    .berdo-scrolly-legend h3 {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .berdo-scrolly-legend-item {
+        font-size: 11px;
+    }
+}
+
 /*trees*/
 * {
 box-sizing: border-box;
