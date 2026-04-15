@@ -1112,16 +1112,22 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
 
 .modal-content {
-position: absolute;
+position: fixed;
 background-color: #fff;
 padding: 16px 20px;
-max-width: 320px;
-width: 320px;
+max-width: 280px;
+width: 280px;
 border-radius: 10px;
 box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 line-height: 1.6;
 font-size: 14px;
 border: 1px solid #eee;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+max-height: 80vh;
+overflow-y: auto;
+z-index: 1000;
 }
 
 
