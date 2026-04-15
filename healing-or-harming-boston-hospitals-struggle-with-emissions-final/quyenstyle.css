@@ -304,23 +304,9 @@ main h2 {
     font-family: "Montserrat","Arial",sans-serif;
     font-size: .8em;
     font-weight: 400;
-    color: #ffffff;
+    color: #a61824;
     text-transform: uppercase;
-    margin-top: 14px;
-    line-height: 1.4;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.45);
-}
-
-.hero .entry-meta {
-    margin: 22px 0 0;
-    padding-bottom: 0;
-    border-bottom: 0;
-}
-
-.hero .entry-meta p.byline {
-    margin-top: 8px;
-    font-size: 0.85em;
-    letter-spacing: 0.01em;
+    margin-top: 235px;
 }
 
 .entry-meta p.posted-on {
@@ -733,7 +719,7 @@ main.site-main .berdo-scrolly-step-card p {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     div[style*="position:sticky"][style*="top:100"] {
         position: static !important;
         top: auto !important;
@@ -751,15 +737,10 @@ main.site-main .berdo-scrolly-step-card p {
         font-size: 1rem;
         border-radius: 12px;
         gap: 8px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
         justify-content: center;
     }
 
     .countdown-subhead {
-        width: 100%;
         font-size: 0.95rem;
         margin-bottom: 8px;
     }
@@ -769,7 +750,7 @@ main.site-main .berdo-scrolly-step-card p {
     #minutes,
     #seconds {
         flex: 1 1 calc(50% - 8px);
-        min-width: 90px;
+        min-width: 120px;
         text-align: center;
     }
 
@@ -811,16 +792,6 @@ main.site-main .berdo-scrolly-step-card p {
 
     .berdo-scrolly-legend-item {
         font-size: 11px;
-    }
-
-    .hero .entry-meta {
-        margin-top: 14px;
-    }
-
-    .hero .entry-meta p.byline {
-        font-size: 0.75em;
-        line-height: 1.45;
-        margin-top: 6px;
     }
 }
 
