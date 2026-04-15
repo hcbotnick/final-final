@@ -719,7 +719,7 @@ main.site-main .berdo-scrolly-step-card p {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     div[style*="position:sticky"][style*="top:100"] {
         position: static !important;
         top: auto !important;
@@ -828,10 +828,21 @@ main.site-main .berdo-scrolly-step-card p {
         pointer-events: none;
     }
 
+    #hero-video::-webkit-media-controls-overlay-play-button,
     #hero-video::-webkit-media-controls-start-playback-button,
     #hero-video::-webkit-media-controls-play-button {
         display: none !important;
         -webkit-appearance: none;
+    }
+
+    body.hero-video-fallback #hero-video {
+        display: none;
+    }
+
+    body.hero-video-fallback .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("./images/1.jpg");
+        background-size: cover;
+        background-position: center;
     }
 }
 
