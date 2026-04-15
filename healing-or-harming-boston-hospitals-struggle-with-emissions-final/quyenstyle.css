@@ -402,14 +402,14 @@ div[style*="position:sticky"] {
     margin-bottom: 40px;
 }
 
-.berdo-scrolly-step-card {
+#berdo-scrolly .berdo-scrolly-step-card {
     width: calc(100vw - 32px);
     max-width: calc(100vw - 32px);
     margin: 0 auto;
     padding: 16px;
 }
 
-.berdo-scrolly-step-card h3 {
+#berdo-scrolly .berdo-scrolly-step-card h3 {
     font-size: 20px;
 }
 
