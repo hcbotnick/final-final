@@ -768,8 +768,12 @@ main.site-main .berdo-scrolly-step-card p {
     }
 
     #hero-video {
+        width: 100%;
         height: 100%;
         transform: translate(-50%, -50%) scale(1.7);
+        object-fit: cover;
+        pointer-events: none;
+        user-select: none;
     }
 
     .hero-text {
@@ -779,13 +783,13 @@ main.site-main .berdo-scrolly-step-card p {
     }
 
     .hero-text h1 {
-        font-size: 1.85em;
-        line-height: 1.12;
+        font-size: 1.55em;
+        line-height: 1.1;
     }
 
     .hero-text h2 {
-        font-size: 0.95em;
-        line-height: 1.45;
+        font-size: 0.85em;
+        line-height: 1.4;
     }
 
     .entry-meta {
@@ -842,8 +846,12 @@ main.site-main .berdo-scrolly-step-card p {
         max-width: min(92vw, 320px);
     }
 
-    #hero-video {
-        pointer-events: none;
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.18);
+        z-index: -1;
     }
 
     #hero-video::-webkit-media-controls-overlay-play-button,
@@ -861,6 +869,10 @@ main.site-main .berdo-scrolly-step-card p {
         background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("./images/1.jpg");
         background-size: cover;
         background-position: center;
+    }
+
+    body.hero-video-fallback .hero::before {
+        display: none;
     }
 }
 
@@ -1070,6 +1082,7 @@ font-size: 20px;
 cursor: pointer;
 font-weight: bold;
 }
+
 
 
 
