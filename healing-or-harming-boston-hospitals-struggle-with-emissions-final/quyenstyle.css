@@ -758,6 +758,19 @@ main.site-main .berdo-scrolly-step-card p {
         padding: 0 14px 20px;
     }
 
+    .hero-text {
+        top: 170px;
+    }
+
+    .entry-meta {
+        margin: 24px 0 20px 0;
+        padding-bottom: 20px;
+    }
+
+    .entry-meta p.byline {
+        margin-top: 16px !important;
+    }
+
     .berdo-scrolly-step {
         min-height: 115vh;
         padding-top: 76vh;
@@ -768,8 +781,8 @@ main.site-main .berdo-scrolly-step-card p {
     }
 
     .berdo-scrolly-step-card {
-        width: 72%;
-        max-width: 72%;
+        width: 84%;
+        max-width: 84%;
         padding: 16px;
     }
 
@@ -792,6 +805,16 @@ main.site-main .berdo-scrolly-step-card p {
 
     .berdo-scrolly-legend-item {
         font-size: 11px;
+    }
+
+    #hero-video {
+        pointer-events: none;
+    }
+
+    #hero-video::-webkit-media-controls-start-playback-button,
+    #hero-video::-webkit-media-controls-play-button {
+        display: none !important;
+        -webkit-appearance: none;
     }
 }
 
