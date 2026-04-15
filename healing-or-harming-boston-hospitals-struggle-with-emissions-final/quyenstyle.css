@@ -81,8 +81,7 @@ figure img {
 }
 
 .compare-photo {
-    flex: 0 0 calc(50% - 10px);
-    max-width: calc(50% - 10px);
+    flex: 1 1 0;
 }
 
 .compare-photo figure {
