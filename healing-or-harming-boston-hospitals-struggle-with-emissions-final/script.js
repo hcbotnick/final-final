@@ -291,12 +291,48 @@ const targetDate = new Date("January 1, 2050 00:00:00").getTime();
 
 
 // modal
+function positionModalPanel(btn, panel) {
+const margin = 8;
+const btnRect = btn.getBoundingClientRect();
+const viewportWidth = window.innerWidth;
+const viewportHeight = window.innerHeight;
+
+// Let CSS size the panel first, then position it safely inside the viewport.
+panel.style.transform = "none";
+panel.style.top = "0px";
+panel.style.left = "0px";
+
+const panelRect = panel.getBoundingClientRect();
+const panelWidth = panelRect.width;
+const panelHeight = panelRect.height;
+
+let left = btnRect.left - 100;
+left = Math.max(margin, Math.min(left, viewportWidth - panelWidth - margin));
+
+const belowTop = btnRect.bottom + margin;
+const aboveTop = btnRect.top - panelHeight - margin;
+let top = belowTop;
+
+// If it does not fit below, prefer above if possible, otherwise clamp.
+if (belowTop + panelHeight > viewportHeight - margin) {
+top = aboveTop >= margin ? aboveTop : (viewportHeight - panelHeight - margin);
+}
+
+top = Math.max(margin, top);
+
+panel.style.left = left + "px";
+panel.style.top = top + "px";
+}
+
 function openModal(e) {
 if (e) {
 e.stopPropagation();
 }
+const btn = document.getElementById("infoButton");
 const modal = document.getElementById("definitionModal");
+const panel = modal.querySelector(".modal-content");
 modal.style.display = "block";
+positionModalPanel(btn, panel);
 }
 
 function closeModal() {
@@ -313,6 +349,21 @@ const clickedInsideModal = e.target.closest("#definitionModal .modal-content");
 if (!clickedInsideModal && e.target.id !== "infoButton") {
 closeModal();
 }
+});
+
+window.addEventListener("resize", function () {
+const modal = document.getElementById("definitionModal");
+if (!modal || modal.style.display !== "block") {
+return;
+}
+
+const btn = document.getElementById("infoButton");
+const panel = modal.querySelector(".modal-content");
+if (!btn || !panel) {
+return;
+}
+
+positionModalPanel(btn, panel);
 });
 
 
