@@ -736,21 +736,24 @@ main.site-main .berdo-scrolly-step-card p {
         padding: 12px 14px;
         font-size: 1rem;
         border-radius: 12px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 8px;
-        justify-content: center;
+        justify-content: stretch;
+        align-items: start;
     }
 
     .countdown-subhead {
         font-size: 0.95rem;
         margin-bottom: 8px;
+        grid-column: 1 / -1;
     }
 
     #days,
     #hours,
     #minutes,
     #seconds {
-        flex: 1 1 calc(50% - 8px);
-        min-width: 120px;
+        min-width: 0;
         text-align: center;
     }
 
@@ -805,6 +808,11 @@ main.site-main .berdo-scrolly-step-card p {
 
     .berdo-scrolly-legend-item {
         font-size: 11px;
+    }
+
+    .modal-content {
+        width: min(92vw, 320px);
+        max-width: min(92vw, 320px);
     }
 
     #hero-video {
