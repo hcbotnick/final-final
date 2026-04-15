@@ -403,8 +403,7 @@ div[style*="position:sticky"] {
 }
 
 .berdo-scrolly-step-card {
-    width: calc(100vw - 32px);
-    max-width: calc(100vw - 32px);
+    width: 100%;
     margin: 0 auto;
     padding: 16px;
 }
