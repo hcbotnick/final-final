@@ -765,14 +765,6 @@ main.site-main .berdo-scrolly-step-card p {
         height: auto;
         min-height: 620px;
         padding-bottom: 20px;
-        display: block;
-    }
-
-    .hero .site-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 100%;
     }
 
     .hero-text {
@@ -781,15 +773,14 @@ main.site-main .berdo-scrolly-step-card p {
     }
 
     .entry-meta {
-        margin: 24px 0 0;
-        padding: 18px 0 28px;
+        margin: 18px 0 20px 0;
+        padding-bottom: 18px;
         position: relative;
         z-index: 2;
-        background: #fff;
     }
 
     .entry-meta p.byline {
-        margin-top: 0 !important;
+        margin-top: 12px !important;
     }
 
     .berdo-scrolly-step {
