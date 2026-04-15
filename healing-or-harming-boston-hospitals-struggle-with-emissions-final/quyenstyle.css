@@ -306,7 +306,7 @@ main h2 {
     font-weight: 400;
     color: #a61824;
     text-transform: uppercase;
-    margin-top: 235px;
+    margin-top: 0;
 }
 
 .entry-meta p.posted-on {
@@ -794,13 +794,14 @@ main.site-main .berdo-scrolly-step-card p {
 
     .entry-meta {
         margin: 16px 0 18px 0;
-        padding-bottom: 18px;
+        padding-bottom: 28px;
         position: relative;
         z-index: 2;
     }
 
     .entry-meta p.byline {
         margin-top: 0 !important;
+        margin-bottom: 10px;
         font-size: 0.76em;
         line-height: 1.4;
     }
@@ -1082,7 +1083,6 @@ font-size: 20px;
 cursor: pointer;
 font-weight: bold;
 }
-
 
 
 
