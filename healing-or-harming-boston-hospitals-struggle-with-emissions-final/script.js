@@ -295,13 +295,8 @@ function openModal(e) {
 if (e) {
 e.stopPropagation();
 }
-const btn = document.getElementById("infoButton");
 const modal = document.getElementById("definitionModal");
-const panel = modal.querySelector(".modal-content");
-const rect = btn.getBoundingClientRect();
 modal.style.display = "block";
-panel.style.top = (rect.bottom + 8) + "px";
-panel.style.left = Math.max(8, (rect.left - 100)) + "px";
 }
 
 function closeModal() {
