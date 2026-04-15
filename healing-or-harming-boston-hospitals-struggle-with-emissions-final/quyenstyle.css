@@ -299,6 +299,7 @@ main h2 {
     margin-top: 14px;
     font-size: 0.72em;
     line-height: 1.4;
+    padding:5%;
 }
 
 .article {
@@ -348,9 +349,25 @@ figcaption {
 #countdown #minutes,
 #countdown #seconds {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
     text-align: center;
     font-size: 0.95em;
     line-height: 1.2;
+}
+
+#countdown .label {
+    font-size: 0.62em;
+    line-height: 1.1;
+}
+
+@media only screen and (max-width:380px) {
+    #countdown {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 div[style*="position:sticky"] {
