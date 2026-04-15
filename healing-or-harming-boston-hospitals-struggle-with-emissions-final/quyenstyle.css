@@ -219,37 +219,6 @@ main.site-main {
     width:50%;
     margin: 0 auto;
 }
-
-/* Keep byline in a non-overlay band below the hero text on mobile. */
-.hero {
-    display: block;
-    height: auto;
-    min-height: 620px;
-    padding-bottom: 20px;
-}
-
-.hero .site-main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.hero-text {
-    top: auto;
-    margin-top: 170px;
-}
-
-.entry-meta {
-    margin: 18px 0 0;
-    padding: 16px 0 24px;
-    background: #fff;
-    position: relative;
-    z-index: 2;
-}
-
-.entry-meta p.byline {
-    margin-top: 0 !important;
-}
 }
 
 @media only screen and (min-width:501px) { /*FOR LARGER SCREENS */
