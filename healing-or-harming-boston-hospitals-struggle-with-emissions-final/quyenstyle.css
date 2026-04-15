@@ -927,6 +927,14 @@ main.site-main .berdo-scrolly-step-card p {
         min-height: 68vh;
         padding: 0 0 10vh;
     }
+    .modal-content {
+    max-width: calc(100vw - 40px);
+    width: calc(100vw - 40px);
+    right: 20px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 /*trees*/
@@ -1129,6 +1137,7 @@ max-height: 80vh;
 overflow-y: auto;
 z-index: 1000;
 }
+
 
 
 
