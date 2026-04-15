@@ -897,6 +897,17 @@ main.site-main .berdo-scrolly-step-card p {
 
 
 @media (max-width: 900px) {
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("./images/1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #hero-video {
+        display: none !important;
+    }
+
     .berdo-scrolly {
         height: 68vh;
     }
