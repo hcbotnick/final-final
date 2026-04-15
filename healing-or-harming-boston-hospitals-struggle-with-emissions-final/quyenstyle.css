@@ -287,17 +287,14 @@ main.site-main {
     justify-content: flex-end;
     height: 100%;
     padding-bottom: 24px;
-}
-
-#hero-video {
-    height: 100%;
-    transform: translate(-50%, -50%) scale(2.15);
-    pointer-events: none;
-
+    position: relative;
+    z-index: 2;
 }
 
 #hero-mobile-photo {
     display: block;
+    object-position: center;
+    z-index: 0;
 }
 
 #hero-video {
@@ -911,13 +908,6 @@ main.site-main .berdo-scrolly-step-card p {
 
 
 @media (max-width: 500px) {
-    .hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("./images/1.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
     #hero-video {
         display: none !important;
     }
