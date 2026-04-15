@@ -258,8 +258,145 @@ span.cat-links {
 /* -------------------- ARTICLE STYLES --------------------------- */
 @media only screen and (max-width:500px) { /*FOR MOBILE */
 main.site-main {
-    width:50%;
+    width: 100%;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 560px;
+    margin-bottom: 24px;
+}
+
+#hero-video {
+    height: 100%;
+    transform: translate(-50%, -50%) scale(2.15);
+}
+
+.hero-text {
+    top: 115px;
+    padding: 0;
+}
+
+main h1 {
+    font-size: 1.45em;
+    line-height: 1.15;
+}
+
+main h2 {
+    font-size: 0.92em;
+    line-height: 1.45;
+}
+
+.entry-meta {
+    margin: 20px 0 18px 0;
+    padding-bottom: 18px;
+}
+
+.entry-meta p.byline {
+    margin-top: 14px;
+    font-size: 0.72em;
+    line-height: 1.4;
+}
+
+.article {
+    padding: 28px 16px;
+    border-radius: 0;
+}
+
+main.site-main p {
+    font-size: 15px;
+    margin-top: 22px;
+}
+
+figcaption {
+    font-size: 12px;
+    padding-top: 12px;
+}
+
+.post-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+}
+
+#countdown {
+    position: static !important;
+    top: auto;
+    left: auto !important;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.countdown-subhead {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+#countdown #days,
+#countdown #hours,
+#countdown #minutes,
+#countdown #seconds {
+    width: 100%;
+    text-align: left;
+}
+
+.berdo-scrolly {
+    height: 76vh;
+}
+
+#berdo-scrolly-story {
+    padding: 0 12px 24px;
+}
+
+.berdo-scrolly-step,
+#first-chapter {
+    min-height: 76vh;
+}
+
+.berdo-scrolly-step-card {
+    width: 100%;
+    padding: 16px;
+}
+
+.berdo-scrolly-step-card h3 {
+    font-size: 20px;
+}
+
+.berdo-scrolly-legend {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+}
+
+.compare-photos {
+    gap: 12px;
+}
+
+#track {
+    border-radius: 8px;
+    padding: 10px 0 12px;
+}
+
+#endcard {
+    min-width: 240px;
+    padding: 0 20px;
+}
+
+#endcard .big {
+    font-size: 30px;
+}
+
+.modal-content {
+    width: calc(100% - 24px);
+    max-width: none;
+    left: 12px !important;
+    right: 12px !important;
 }
 }
 
