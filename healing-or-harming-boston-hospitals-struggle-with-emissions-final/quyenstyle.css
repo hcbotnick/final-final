@@ -446,7 +446,7 @@ div[style*="position:sticky"] {
 }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:500px) {
 
     #berdo-scrolly .berdo-scrolly-step-card {
         width: 100%;
@@ -891,7 +891,7 @@ main.site-main .berdo-scrolly-step-card p {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
     .hero {
         background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("./images/1.jpg");
         background-size: cover;
@@ -1135,7 +1135,6 @@ font-size: 20px;
 cursor: pointer;
 font-weight: bold;
 }
-
 
 
 
