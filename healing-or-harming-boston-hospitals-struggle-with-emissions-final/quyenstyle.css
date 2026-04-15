@@ -447,6 +447,13 @@ div[style*="position:sticky"] {
 }
 
 @media only screen and (max-width:900px) {
+    #berdo-scrolly .berdo-align-left,
+    #berdo-scrolly .berdo-align-right,
+    #berdo-scrolly .berdo-align-center {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     #berdo-scrolly .berdo-scrolly-step-card {
         width: calc(100vw - 32px);
         max-width: calc(100vw - 32px);
