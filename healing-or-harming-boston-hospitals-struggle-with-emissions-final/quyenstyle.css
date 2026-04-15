@@ -400,6 +400,7 @@ div[style*="position:sticky"] {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 40px;
+    padding-top: 40px;
 }
 
 .berdo-scrolly-step-card {
