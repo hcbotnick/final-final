@@ -762,25 +762,43 @@ main.site-main .berdo-scrolly-step-card p {
     }
 
     .hero {
-        height: auto;
-        min-height: 620px;
-        padding-bottom: 20px;
+        height: 640px;
+        min-height: 0;
+        margin-bottom: 24px;
+    }
+
+    #hero-video {
+        height: 100%;
+        transform: translate(-50%, -50%) scale(1.7);
     }
 
     .hero-text {
-        top: auto;
-        margin-top: 170px;
+        top: 130px;
+        margin-top: 0;
+        padding: 0 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.85em;
+        line-height: 1.12;
+    }
+
+    .hero-text h2 {
+        font-size: 0.95em;
+        line-height: 1.45;
     }
 
     .entry-meta {
-        margin: 18px 0 20px 0;
+        margin: 16px 0 18px 0;
         padding-bottom: 18px;
         position: relative;
         z-index: 2;
     }
 
     .entry-meta p.byline {
-        margin-top: 12px !important;
+        margin-top: 0 !important;
+        font-size: 0.76em;
+        line-height: 1.4;
     }
 
     .berdo-scrolly-step {
