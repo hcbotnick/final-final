@@ -720,12 +720,19 @@ main.site-main .berdo-scrolly-step-card p {
 }
 
 @media (max-width: 900px) {
+    div[style*="position:sticky"][style*="top:100"] {
+        position: static !important;
+        top: auto !important;
+        width: 100%;
+        margin: 0;
+    }
+
     #countdown {
         position: static !important;
         left: auto !important;
         right: auto !important;
         width: min(100%, 420px);
-        margin: 12px auto 18px;
+        margin: 8px auto 18px;
         padding: 12px 14px;
         font-size: 1rem;
         border-radius: 12px;
@@ -752,17 +759,17 @@ main.site-main .berdo-scrolly-step-card p {
     }
 
     .berdo-scrolly-step {
-        min-height: 70vh;
-        padding-top: 52vh;
+        min-height: 115vh;
+        padding-top: 76vh;
     }
 
     #first-chapter {
-        min-height: 70vh;
+        min-height: 90vh;
     }
 
     .berdo-scrolly-step-card {
-        width: 92%;
-        max-width: none;
+        width: 72%;
+        max-width: 72%;
         padding: 16px;
     }
 
